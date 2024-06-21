@@ -1,0 +1,12 @@
+{
+  "name": "business-contacts",
+  "version": "1.0.0",
+  "description": "An application serving up business contacts, via Node, Express, and React\r ## 👉 Client Dockerfile setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
