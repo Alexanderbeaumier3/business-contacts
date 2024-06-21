@@ -1,3 +1,7 @@
+on:
+  push:
+    branches: [main]
+
 jobs:
   test:
     name: Test
@@ -8,7 +12,4 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm ci
-        working-directory: <package-lock.json> # Adjust this path
       - run: npm test
-        working-directory: <package-lock.json>
-
