@@ -1,12 +1,27 @@
 {
   "name": "business-contacts",
   "version": "1.0.0",
-  "description": "An application serving up business contacts, via Node, Express, and React\r ## 👉 Client Dockerfile setup",
+  "description": "An application serving up business contacts, developed with Node, Express, and React.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "client-start": "npm start --prefix client",
+    "build": "npm run build --prefix client"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["node", "express", "react", "contacts"],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "babel-cli": "^6.26.0",
+    "webpack": "^5.72.0"
+  }
 }
