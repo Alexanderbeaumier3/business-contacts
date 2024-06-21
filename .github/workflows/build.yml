@@ -1,15 +1,14 @@
-on:
-  push:
-    branches: [main]
-
 jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
-    steps:  
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - run: npm ci
+        working-directory: <C:\Users\abeaumier\Desktop\projects\business-contacts\package-lock.json> # Adjust this path
       - run: npm test
+        working-directory: <C:\Users\abeaumier\Desktop\projects\business-contacts\package-lock.json>
+
